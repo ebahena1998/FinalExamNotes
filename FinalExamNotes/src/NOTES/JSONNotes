@@ -1,0 +1,64 @@
+JSON
+• JSON stands for JavaScript Object Notation
+• It is a lightweight data-interchange format that is easy for humans to read and write, and easy for
+    machines to parse and generate.
+• JSON is based on a subset of the JavaScript programming language, but is language-independent and can
+    be used with any programming language that can parse JSON data.
+• JSON data is structured as key-value pairs, where keys are strings and values can be strings, numbers,
+    booleans, arrays, or other JSON objects
+• JSON data can be easily converted to and from native data types in most programming languages using
+    built-in functions or third-party libraries.
+• JSON syntax is simple and flexible, allowing for comments, whitespace, and varying levels of data
+    complexity.
+• JSON is widely used in web development, mobile app development, and other software applications that
+    require data exchange or storage.
+
+    {
+        "String" : "Hi",
+        "number" : 2.5,
+        "boolean" : true,
+        "null" : null,
+        "object" : { "name" : "Kyle", "age : 24 },
+        "array" : [ "Hello", 5, false, null, { "key" : "value", "number" : 6 }],
+        "arrayOfObjects" : [
+        { "name" : "Jerry", "age" : 28 },
+        { "name" : "Sally", "age" : 26 }
+        ]
+    }
+
+
+JSON Arrays are simple structures that hold simple list of items, just like a
+Java array or ArrayList
+• JSON Arrays enclosed in square brackets: [ ]
+    Example: [ “Apples”, ”Banana”, 23, true ]
+
+
+JSON OBJECT (MAP)
+• JSON Objects are key/value structures that hold a simple list of items, just
+    like a Java array or ArrayList
+• JSON Arrays enclosed in curly braces: {}
+    Example: { “Name” : ”Jane”, ”Email” : jane@Hotmail.com }
+
+
+JSON DOCUMENTS
+• JSON documents are structured using a combination of JSON Array
+  and JSON Objects
+
+Example:
+• Consider the requirement to store all students in class where each
+  student has a Name, Email Address, and Phone Number as data fields
+
+1) Individual students will be stored in a JSON object
+2) All students will be stored in a JSON array
+3) Each entry in the JSON array will be a JSON object containing an
+   individual student
+
+[
+    { ”Name”  : ”Student1”,
+      “Email” : ”Student1@email.com”,
+      “Phone” : ”Student1Phone” },
+
+    { ”Name”  : ”Student2”,
+      “Email” : ”Student2@email.com”,
+      “Phone” : ”Student2Phone” }
+]

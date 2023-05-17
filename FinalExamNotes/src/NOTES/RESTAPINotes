@@ -1,0 +1,25 @@
+REST stands for REpresentational State Transfer
+• The API stands for Application Programming Interface
+• if you write a reusable Java class with methods, you are essentially creating an
+    API
+• REST is an architectural style:
+• That is used to build scalable and distributed systems
+• That enables interoperability
+• Where resources are hosted on remote servers and are accessed using
+    Uniform Resource Locator (URL) addresses
+• Where the client makes requests to access and manipulate resources using
+    methods such as GET, POST, PUT, PATCH, DELETE, etc.
+
+Client sends a request <-> HTTP METHODS(GET) <-> Server sends a response
+
+WHY USE REST?
+Scalability: RESTful APIs can handle large numbers of requests from a wide range
+of clients
+• Simplicity: REST is easy to understand and implement due to its adherence to
+    standard HTTP methods (GET, POST, PUT, DELETE)
+• Interoperability: Works well with different platforms, languages, and systems,
+    promoting reusability and collaboration
+• Performance: Stateless nature allows for better caching, reducing server load and
+    improving response times
+• Maintainability: Separation of concerns between client and server allows for
+    independent development and updates

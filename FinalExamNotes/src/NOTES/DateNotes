@@ -1,0 +1,41 @@
+DATE
+• The Epoch time format represents time in milliseconds since January 1,
+  1970, in the Universally Co-ordinated Time zone (UTC)
+• The java.util.Date class in Java uses the Epoch time to calculate
+  date and time
+• The java.util.Date class has two constructors:
+– The no-argument constructor Date(): Creates Date object with current
+  date and time
+– The constructor that takes a long value Date(long time): Creates Date
+  object with the specified time
+
+• The java.util.Date class the following key methods:
+– after(Date when): Returns true of this date occurs in the future of the given date
+– before(Date when): Returns true of this date occurs in the past of the given date
+– equals(Date when): Returns true of this date is equal to the given date
+– getTime(): Returns time in milliseconds
+
+
+SIMPLE DATE FORMAT
+• The java.text.SimpleDateForamt is used to:
+– Covert text to java.util.Date object
+– Format java.util.Date to String
+• Constructor:
+    SimpleDateFormat(String pattern) e.g. new SimpleDateFormat(“MM/dd/yy”);
+• Methods:
+    parse(String text) e.g. parse(“11/3/2022”);
+    format(Date date)
+
+CALENDAR
+• The java.util.Calendar class is an abstract class that represents a calendar
+• The java.util.Calendar class does not have a public constructor, objects of this class are created using a
+  factory method
+• Calendar.getInstance(); //Creates calendar object
+• Calendar.setTime(java.util.Date); //Sets current date / time on the calendar
+• Calendar.setTime(java.util.Date); //Sets current date and time
+• Calendar.get(Calendar.MONTH); //Returns month between 0 and 11
+• Calendar.get(Calendar.DAY_OF_WEEK); //Returns month between 1 (Sunday) and 7 (Saturday)
+• Calendar.get(Calendar.HOUR); //Returns hour of the day
+• Calendar.get(Calendar.MINUTE); // Returns minute of the hour
+• Calendar.get(Calendar.SECONDS); // Returns second of the minute
+• Calendar.get(Calendar.AM_PM); // Returns 0 for AM and 1 for PM

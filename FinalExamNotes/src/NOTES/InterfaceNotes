@@ -1,0 +1,47 @@
+INTERFACES
+• An interface defines a set of methods and properties that a class must
+  implement
+• An interface defines a contract or protocol for classes
+• Methods defined in an interface only have signatures and do not a body
+• A class that implements an interface must implement all methods defined in
+  the interface
+• All methods specified by an interface are public by default
+• A class can implement one or more interfaces. This is unlike inheritance where
+  a class can only extend one class
+
+• The general format of an interface definition:
+  public interface InterfaceName {
+    (Method signatures...)
+  }
+
+• All methods specified by an interface are public by default
+• A class can implement one or more interfaces
+
+An interface can contain field declarations:
+– all fields in an interface are treated as final and static
+
+• Because they automatically become final, you must provide an initialization
+  value
+    public interface Doable
+    {
+        int FIELD1 = 1, FIELD2 = 2;
+        (Method signatures...)
+    }
+
+• In this interface, FIELD1 and FIELD2 are final static int variables
+• Any class that implements this interface has access to these variables
+
+• A class can be derived from only one superclass
+• Java allows a class to implement multiple interfaces
+• When a class implements multiple interfaces, it must provide the methods
+  specified by all of them
+• To specify multiple interfaces in a class definition, simply list the names of the
+  interfaces, separated by commas, after the implements keyword.
+
+    public class MyClass implements Interface1, Interface2, Interface3
+
+POLYMORPHISM IN INTERFACES
+• Java allows you to create reference variables of an interface type
+• An interface reference variable can reference any object that
+  implements that interface, regardless of its class type
+• This is another example of polymorphism

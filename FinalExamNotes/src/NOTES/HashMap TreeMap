@@ -1,0 +1,84 @@
+Lists (e.g) ArrayList are suitable for storing single cilumns of data
+e.g. list of names; list of cities; list of numbers etc
+
+Maps are used to store key-value data:
+    - Name : Joe Blog
+    - Age  : 25
+    - City : Carson
+
+Two of the common types of Maps in Java
+    - java.util.HashMap
+    - java.util.TreeMap
+
+Both TreeMap and HashMap have the same interface. They appear the same
+as far as the end-user is concerned
+
+TreeMap stores data internally as a sorted tree. Order of the keys in a TreeMap is guaranteed
+
+HashMap is more efficient in terms of writing and reading data, however, order of the keys is not
+guaranteed
+
+creating a HashMap Object:
+    Map<K, V> map = new HashMap<K, V>();
+
+    K = key data type
+    V = value data type
+
+Adding value to the map
+    map.put(key, value);
+
+Retrieving Single Value
+    value = map.get(key);
+
+Get all keys from a map
+java.util.Set s = map.keySet();
+
+Get all values from a map
+java.util.Collection c = map.values();
+
+Retrieving Single Value
+value = map.get(key);
+
+//GETTING EACH VALUE
+
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class JavaMapExample {
+
+    public static void main(String[] args) {
+
+        Map<String, String> map = new HashMap<>();
+        map.put("db", "oracle");
+        map.put("username", "user1");
+        map.put("password", "pass1");
+
+        // Get keys and values
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            String k = entry.getKey();
+            String v = entry.getValue();
+            System.out.println("Key: " + k + ", Value: " + v);
+        }
+
+        // Get all keys
+        Set<String> keys = map.keySet();
+        for (String k : keys) {
+            System.out.println("Key: " + k);
+        }
+
+        // Get all values
+        Collection<String> values = map.values();
+        for (String v : values) {
+            System.out.println("Value: " + v);
+        }
+
+        // Java 8
+        map.forEach((k, v) -> {
+            System.out.println("Key: " + k + ", Value: " + v);
+        });
+
+    }
+}

@@ -1,0 +1,10 @@
+URL is short for Universal Resource Locator
+An HTTP URL has three parts:
+1. Protocol: Name of the protocol being used followed by a colon and two forward
+   slash characters e.g. http://
+2. Host: IP address or domain name e.g. www.google.com
+3. Resource: The actual resource (text, images, videos) e.g.
+
+/videos/myvideo.mp4
+
+Example: http://www.google.com/mypage/page.html

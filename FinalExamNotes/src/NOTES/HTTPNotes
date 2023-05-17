@@ -1,0 +1,52 @@
+COMMON HTTP HEADERS
+Header (Type) [Description]
+
+User-Agent (Request) [Client sends this information to tell server what type
+of web browser it is]
+
+Host (Request) [Client sends this to server with the “host” part of the
+URL]
+
+Content-Type (Response) [Server returns this to client to explain the type of
+content being returned]
+
+Set-Cookie (Response) [Server returns this to client to store the contained
+information as a cookie]
+
+Server (Response) [Server returns this information to explain what type
+of server software it is running]
+
+
+COMMON HTTP HEADERS
+Code (Name) [Description]
+
+200 (OK)                    [The server successfully processed request and has returned the output]
+301 (Permanently moved)     [The requested resource has moved to a new location (location is provided)]
+302 (Temporarily moved)     [The requested resource has moved to a new location (location is provided)]
+400 (Bad Request)           [Server does not understand client’s request, request is not according to protocol]
+401 (Unauthorized)          [The client needs to login and provide credentials]
+403 (Forbidden)             [The client has no access rights to the requested resource]
+404 (Not Found)             [The requested resource was not found on the server]
+500 (Internal Server Error) [There was some error, and the server was not able to complete the request]
+503 (Service Unavailable)   [The server is not ready to service client’s request]
+
+
+A Server process provides a service to clients. It is always “listening”
+on a pre-defined network port waiting for client connections. The
+server process:
+• Attaches itself to a specific network port and starts listening
+• Accepts client connection and establishes a two-way communication channel
+• Receives client requests and processes it
+• Sends the response to the client
+• Closes connection when done (Connection closure can be initiated by the client or the
+    server, depending on the protocol)
+• java.net.ServerSocket class represents a server socket
+
+Example)
+
+ServerSocket server = new ServerSocket(1200);
+
+Socket client=server.accept(); // Blocks until client connection is made
+
+InputStream in=client.getInputStream();
+OutputStream out=client.getOutputStream();

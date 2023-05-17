@@ -1,0 +1,40 @@
+ABSTRACT CLASSES
+• An abstract class is a “conceptual idea”. It cannot be
+  instantiated i.e. objects cannot be created from an abstract class
+• Other classes can inherit from an abstract class. If the subclasses
+  are not also abstract, objects can be created from them
+• Abstract classes can be empty i.e. no methods declared in them
+• A class becomes abstract when you place the abstract keyword in
+  the class definition
+• A class can be abstract even if it has no abstract methods
+
+• If a subclass of an abstract superclass does not implement all the
+  abstract methods, the subclass must be defined abstract
+• An abstract class cannot be instantiated using the new operator,
+  but it may contain constructors, which are invoked in the
+  constructors of its subclasses
+• A subclass can override a method from its superclass to define it
+  abstract
+• You cannot create an instance from an abstract class using the
+  new operator, but an abstract class can be used as a data type
+
+  Declaring Abstract Classes
+  // declaring an abstract class
+  public abstract class name {
+  ...
+  // declaring an abstract method
+  // (any subclass must implement it)
+  public abstract type name(parameters);
+  }
+
+
+ ABSTRACT METHODS
+ • An abstract method has a signature but no body and must be
+   overridden in a subclass:
+
+   public abstract String getInput();
+
+ • If a class has one or more abstract methods, then the class must
+   be declared as abstract
+ • A class inheriting a class with abstract method must either
+   implement the abstract method or be declared an abstract class
